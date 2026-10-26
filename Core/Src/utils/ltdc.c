@@ -117,7 +117,7 @@ static void ltdc_setup(void){
 	LTDC->TWCR = ((HWS + HBP + LCD_H + HFP - 1) << 16) | (VSH + VBP + LCD_V + VFP -1);
 
 	//Background color
-	LTDC->BCCR = 0x000000;
+	LTDC->BCCR = 0x000000; //Black
 
 	//Load shadow registers
 	LTDC->SRCR = LTDC_SRCR_IMR;
